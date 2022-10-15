@@ -172,10 +172,13 @@ main() {
   local user pass directory_id subaccount subaccount_id org
 
   # Obtain credentials for SAP BTP / CF
-  echo Please enter your SAP BTP credentials
-  read -r -p 'Email: ' user
-  read -r -s -p 'Password: ' pass
-  echo
+  # echo Please enter your SAP BTP credentials
+  # read -r -p 'Email: ' user
+  # read -r -s -p 'Password: ' pass
+  # echo
+
+  user="richard.schop@gmail.com"
+  pass="Mercu01!1"
 
   # Authenticate with SAP BTP
   login_btp "$user" "$pass" "$region" "$global_account_subdomain"
